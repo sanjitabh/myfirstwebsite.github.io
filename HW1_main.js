@@ -5,9 +5,9 @@ let myImage = document.getElementById("myImage");
 myButton.onclick = () => {
   const mySrc = myImage.getAttribute("src");
   if (mySrc === "tulips.jpg") {
-    myImage.setAttribute("src", "nyc.jpg");
+    myImage.setAttribute("src", "nyc.JPG");
   } else {
-    myImage.setAttribute("src", "tulips.jpg");
+    myImage.setAttribute("src", "tulips.JPG");
   }
 };
 
