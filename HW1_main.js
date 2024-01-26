@@ -28,6 +28,16 @@ if (!localStorage.getItem("name")) {
   const storedName = localStorage.getItem("name");
   myHeading.textContent = `Welcome, ${storedName}`;
   myHeading.style.color = "#556B2F"; // Set text color
+
+function setUserName() {
+  const myName = prompt("Please enter your name.");
+  if (!myName) {
+    setUserName();
+  } else {
+    localStorage.setItem("name", myName);
+    myHeading.textContent = `Welcome, ${myName}`;
+  }
+}
 }
 myButton2.onclick = () => {
   setUserName();
